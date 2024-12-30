@@ -11,7 +11,7 @@ echo strlen($my_self);
 echo str_word_count($my_self);
 
 // find text... [strpos()]
-echo strpos($my_self, "PHP");  
+echo strpos($my_self, "PHP"); // output the starting index number of this word 
 
 // upper case... [strtoupper()]
 echo strtoupper($my_self);
@@ -44,6 +44,16 @@ echo $new_string;
 echo "<pre>";
 echo "Hey, how are you \"Rafi\"? \n What are you doing now.";
 echo "</pre>";
+
+
+
+
+// find word...
+echo preg_match("/jual/i", $my_self); // return 1 means true
+echo preg_match_all("/jual/i", $my_self); // return 1 means true
+
+// replace... 
+echo preg_replace("/jual/i", "Rana", $my_self);
 
 
 
